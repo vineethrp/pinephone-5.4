@@ -1119,6 +1119,10 @@ phy_GetSecondaryChnl_8703B(
 
 	}
 
+#if defined(__clang__)
+        // https://bugs.llvm.org/show_bug.cgi?id=42576
+	barrier();
+#endif
 	return (SCSettingOf40 << 4) | SCSettingOf20;
 }
 

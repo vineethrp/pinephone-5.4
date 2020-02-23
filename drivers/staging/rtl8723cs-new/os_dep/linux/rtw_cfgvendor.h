@@ -293,7 +293,7 @@ typedef enum {
 } wifi_channel_width;
 
 typedef int wifi_radio;
-typedef int wifi_channel;
+//typedef int wifi_channel;
 
 typedef struct {
     wifi_channel_width width;
